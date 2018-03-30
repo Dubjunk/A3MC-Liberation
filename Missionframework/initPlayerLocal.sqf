@@ -1,6 +1,14 @@
 // Enable the KP Ranks automatic insignia assignment function
 	KP_Ranks_enable = true;
 
+// Text in den Chatkanälen deaktivieren (Global, Seite, Gruppe, Direkt, Fahrzeug, Kommando)
+0 enableChannel [false,true];
+1 enableChannel [false,true];
+2 enableChannel [false,true];
+3 enableChannel [false,true];
+4 enableChannel [false,true];
+5 enableChannel [false,true];	
+	
 // Funksystem
 
 	player createDiarySubject ["Funksystem", "Funksystem"];
