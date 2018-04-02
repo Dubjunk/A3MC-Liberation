@@ -71,6 +71,7 @@ The area has fallen to the enemy, and it is up to you to take it back. Embark on
     * [DynaSound 2](http://steamcommunity.com/sharedfiles/filedetails/?id=825181638)
     * [Enhanced Movement](http://steamcommunity.com/sharedfiles/filedetails/?id=333310405)
 
+### Zurzeit nicht in Betrieb:
 ### [GER] ArmA3 MilSim Community [A3MC] - Public Server #2
 
 * IP: 213.133.110.170
