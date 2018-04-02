@@ -16,13 +16,13 @@ class Params
 		title = $STR_PARAMS_DIFFICULTY;
 		values[] = { 0, 1, 2, 3, 4, 5, 6, 7 };
 		texts[] = { $STR_PARAMS_DIFFICULTY1, $STR_PARAMS_DIFFICULTY2, $STR_PARAMS_DIFFICULTY3, $STR_PARAMS_DIFFICULTY4, $STR_PARAMS_DIFFICULTY5, $STR_PARAMS_DIFFICULTY6, $STR_PARAMS_DIFFICULTY7, $STR_PARAMS_DIFFICULTY8 };
-		default = 4;
+		default = 5;
 	};
 	class Aggressivity {
 		title = $STR_AGGRESSIVITY_PARAM;
 		values[] = {0,1,2,3,4};
 		texts[] = {$STR_AGGRESSIVITY_PARAM0, $STR_AGGRESSIVITY_PARAM1,$STR_AGGRESSIVITY_PARAM2,$STR_AGGRESSIVITY_PARAM3,$STR_AGGRESSIVITY_PARAM4};
-		default = 3;
+		default = 2;
 	};
 	class AdaptToPlayercount {
 		title = $STR_PARAM_ADAPT_TO_PLAYERCOUNT;
@@ -52,7 +52,7 @@ class Params
 		title = $STR_PARAM_SQUAD_SIZE;
 		values[] = {0,1,2,4,6,8,10,12,16,20,24,30,36};
 		texts[] = {0,1,2,4,6,8,10,12,16,20,24,30,36};
-		default = 5;
+		default = 10;
 	};
 	class BluforDefenders {
 		title = $STR_PARAM_BLUFOR_DEFENDERS;
@@ -88,7 +88,7 @@ class Params
 		title = $STR_PARAMS_RESOURCESMULTIPLIER;
 		values[] = { 0, 1, 2, 3, 4, 5, 6, 7 };
 		texts[] = { "x0.25", "x0.5", "x0.75", "x1", "x1.25","x1.5","x2","x3" };
-		default = 3;
+		default = 1;
 	};
 	class Spacer1 {
 		title = "";
