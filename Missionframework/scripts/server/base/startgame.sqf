@@ -61,7 +61,7 @@ if (count GRLIB_all_fobs == 0) then {
 		clearMagazineCargoGlobal _crate;
 		clearItemCargoGlobal _crate;
 		clearBackpackCargoGlobal _crate;
-		_crate setVariable ["KP_liberation_crate_value", 100, true];
+		_crate setVariable ["KP_liberation_crate_value", 50, true];
 		[_crate, 500] remoteExec ["F_setMass",_crate];
 		[objNull, _crate] call BIS_fnc_curatorObjectEdited;
 		if(KP_liberation_ace) then {[_crate, true, [0, 1.5, 0], 0] remoteExec ["ace_dragging_fnc_setCarryable"];};
