@@ -274,5 +274,27 @@ while {true} do {
 		};
 	};
 
+	if (!isNil("zeus1")) then {
+		if ((player == zeus1) && (isNull(getAssignedCuratorLogic zeus1))) then {
+			if ( _idact_zeus == -1 ) then {
+				_idact_zeus = player addAction ["<t color='#FF0000'>" + localize "STR_REASSIGN_ZEUS" + "</t>",{[] remoteExec ["zeus_remote_call",2];},"",-1002,false,true,"","build_confirmed == 0"];
+			};
+		} else {
+			player removeAction _idact_zeus;
+			_idact_zeus = -1;
+		};
+	};	
+
+	if (!isNil("zeus2")) then {
+		if ((player == zeus2) && (isNull(getAssignedCuratorLogic zeus2))) then {
+			if ( _idact_zeus == -1 ) then {
+				_idact_zeus = player addAction ["<t color='#FF0000'>" + localize "STR_REASSIGN_ZEUS" + "</t>",{[] remoteExec ["zeus_remote_call",2];},"",-1002,false,true,"","build_confirmed == 0"];
+			};
+		} else {
+			player removeAction _idact_zeus;
+			_idact_zeus = -1;
+		};
+	};
+	
 	uiSleep 1;
 };
