@@ -38,7 +38,7 @@
 			"<br/><font color='#00d8ff'>4. Beleidigungen anderer Spieler werden nicht toleriert</font color>"+
 			"<br/><font color='#00d8ff'>5. Das Einspielen nicht immersiver Geräusche ist zu unterlassen, eine angemessene Geräuschkulisse gilt zu wahren</font color>"+
 			"<br/><font color='#00d8ff'>6. Alleingänge sind zu unterlassen </font color>"+
-			"<br/><font color='#00d8ff'>7. Der MP (Militärpolizei) ist Folge zu leisten, da sie die A3M-Community auf dem Server vertritt </font color>"+
+			"<br/><font color='#00d8ff'>7. Die MP (Militärpolizei) stellt im Spiel die Einhaltung der Regeln sicher und ihren Anweisungen ist Folge zu leisten </font color>"+
 			"<br/><font color='#00d8ff'>8. Nach schwerem regelwidrigem Verhalten wird der entsprechende Spieler verwarnt und ggf. vom Spiel ausgeschlossen</font color>"+
 			"<br/><font color='#00d8ff'>9. Teambeschuss (Blue on Blue) ist zu vermeiden</font color>"+
 			"<br/><font color='#00d8ff'></font color>"+
