@@ -12,11 +12,11 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=49;
+		nextID=51;
 	};
 	class Camera
 	{
-		pos[]={97.245972,249.76585,14.377171};
+		pos[]={99.686501,167.78871,59.154804};
 		dir[]={-0.080608673,-0.92909926,0.36114594};
 		up[]={-0.2023927,0.36988878,0.90676677};
 		aside[]={0.97605252,-2.5287736e-006,0.2178603};
@@ -1915,7 +1915,7 @@ class Mission
 			position[]={98.464096,185.011,74.614273};
 			name="respawn";
 			type="Empty";
-			angle=353.06488;
+			angle=353.06485;
 			id=259;
 			atlOffset=43.791794;
 		};
@@ -24505,7 +24505,6 @@ class Mission
 			};
 			id=2691;
 			type="Land_Defibrillator_F";
-			atlOffset=0.072814941;
 		};
 		class Item1639
 		{
@@ -42472,7 +42471,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={98.836891,140.94888,63.8032};
+				position[]={95.641998,140.93391,63.080002};
 			};
 			name="zm2";
 			id=3421;
@@ -42513,7 +42512,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -42563,11 +42562,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={99.80941,140.92024,62.701408};
+				position[]={98.649002,140.8916,61.598999};
 			};
 			name="zm3";
 			id=3422;
 			type="ModuleCurator_F";
+			atlOffset=1.5258789e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -42604,7 +42604,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
