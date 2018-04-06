@@ -45,18 +45,18 @@ Therefore, adding the same value twice or three times means they are more likely
 /* Militia infantry. Lightweight soldier classnames the game will pick from randomly as sector defenders.
 Think of them like garrison or military police forces, which are more meant to control the local population instead of fighting enemy armies. */
 militia_squad = [
-	"LOP_TKA_Infantry_SL";								//Squad Leader
-	"LOP_TKA_Infantry_TL";								//Team Leader
-	"LOP_TKA_Infantry_Rifleman";							//Rifleman (Lite)
-	"LOP_TKA_Infantry_Rifleman";							//Rifleman (Lite)
-	"LOP_TKA_Infantry_Rifleman_2";							//Rifleman
-	"LOP_TKA_Infantry_GL";								//Grenadier
-	"LOP_TKA_Infantry_MG";								//Autorifleman
-	"LOP_TKA_Infantry_Marksman";							//Marksman
-	"LOP_TKA_Infantry_AT";								//AT Specialist
-	"LOP_TKA_Infantry_AA";								//AA Specialist
-	"LOP_TKA_Infantry_Corpsman";							//Combat Life Saver
-	"LOP_TKA_Infantry_Engineer";							//Engineer
+	"LOP_TKA_Infantry_SL",								//Squad Leader
+	"LOP_TKA_Infantry_TL",								//Team Leader
+	"LOP_TKA_Infantry_Rifleman",							//Rifleman (Lite)
+	"LOP_TKA_Infantry_Rifleman",							//Rifleman (Lite)
+	"LOP_TKA_Infantry_Rifleman_2",							//Rifleman
+	"LOP_TKA_Infantry_GL",								//Grenadier
+	"LOP_TKA_Infantry_MG",								//Autorifleman
+	"LOP_TKA_Infantry_Marksman",							//Marksman
+	"LOP_TKA_Infantry_AT",								//AT Specialist
+	"LOP_TKA_Infantry_AA",								//AA Specialist
+	"LOP_TKA_Infantry_Corpsman",							//Combat Life Saver
+	"LOP_TKA_Infantry_Engineer"							//Engineer
 ];
 
 // Militia vehicles. Lightweight vehicle classnames the game will pick from randomly as sector defenders.
