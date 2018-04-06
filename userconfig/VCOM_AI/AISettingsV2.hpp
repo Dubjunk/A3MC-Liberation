@@ -55,7 +55,7 @@ VCOM_CurrentlySuppressingLimit = 16;
 //The distance a unit needs to be away for Vcom AI to temporary disable itself upon the unit? The AI unit will also need to be out of combat.
 VCOM_DisableDistance = 2000;
 //How many AI can be checking roles/equipment/additional commands at once? This will impact FPS of AI in and out of battle. The goal is to limit how many benign commands are being run at once and bogging down a server with over a couple HUNDRED AI.
-VCOM_BasicCheckLimit = 35;
+VCOM_BasicCheckLimit = 20;
 //How many squad leaders can be executing advanced code at once.
 VCOM_LeaderExecuteLimit = 20;
 //How low should the FPS be, before Vcom pauses simulation. This will not disable simulation on AI - they will run default Bohemia AI.
@@ -440,8 +440,8 @@ VCOM_AISKILL_EAST =
 	_aimingAccuracySet = 0.7;
 	_aimingShakeSet = 0.5;
 	_aimingSpeedSet = 0.5;
-	_spotDistanceSet = 0.5;
-	_spotTimeSet = 0.4;
+	_spotDistanceSet = 0.7;
+	_spotTimeSet = 0.5;
 	_courageSet = 0.5;
 	_reloadSpeedSet = 0.5;
 	_commandingSet = 0.9;
