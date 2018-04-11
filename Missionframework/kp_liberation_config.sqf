@@ -252,6 +252,8 @@ KP_liberation_allowed_items_extension = [
 	"rhs_acc_ekp8_18b",
 	"rhs_acc_ekp8_18c",
 	"rhs_acc_ekp8_18d",
+	"rhs_rshg2_mag",
+	"rhs_rpg26_mag",
 	"rhsusf_acc_g33_T1_flip",
 	"rhsusf_acc_g33_xps3_flip",
 	"rhsusf_acc_g33_xps3_tan_flip",
@@ -278,6 +280,8 @@ KP_liberation_allowed_items_extension = [
 	"BWA3_acc_LLM01_flash_underbarrel",
 	"BWA3_acc_LLM01_laser_underberrel",
 	"BWA3_acc_LLM01_laser_underbarrel",
+	"BWA3_Pzf3_Used",
+	"BWA3_RGW90_Used",
 	"UK3CB_BAF_AT4_CS_AP_Mag",
 	"UK3CB_BAF_Javelin_Launcher",
 	"sma_spitfire_03_rds_low_ard_red",
@@ -287,7 +291,8 @@ KP_liberation_allowed_items_extension = [
 	"ACE_Chemlight_Shield_Yellow",
 	"ACE_Chemlight_Shield_Green",
 	"ACE_Chemlight_Shield_Red",
-	"ACE_ReserveParachute"
+	"ACE_ReserveParachute",
+	"ACE_launch_NLAW_Used_F"
 ];
 
 /* - Configuration settings for crates transported by vehicles.
@@ -464,24 +469,6 @@ vehicle_refuel_sources = [
 	"RHS_Ural_Fuel_VDV_01",
 	"O_T_Truck_03_fuel_ghex_F"
 ];
-
-// Classnames of artillery vehicles or statics which should be linked to the support system. (Currently deactivated)
-/*KP_liberation_artySupp = [
-	"B_Mortar_01_F",
-	"B_T_Mortar_01_F",
-	"B_MBT_01_arty_F",
-	"B_T_MBT_01_arty_F",
-	"B_MBT_01_mlrs_F",
-	"B_T_MBT_01_mlrs_F",
-	"rhsusf_m109_usarmy",
-	"rhsusf_m109d_usarmy",
-	"RHS_M252_WD",
-	"RHS_M252_D",
-	"RHS_M119_WD",
-	"RHS_M119_D",
-	"UK3CB_BAF_Static_L16_Deployed_MTP",
-	"rhs_2s3_tv"
-];*/
 
 // Classnames of boats, so they can be built on water.
 boats_names = [

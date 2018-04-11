@@ -1,36 +1,31 @@
-waitUntil {!(isNil "GRLIB_permissions")};
-waitUntil {!(isNil "save_is_loaded")};
+if (!GRLIB_permissions_param) exitWith {};
 
-call compile preprocessFileLineNumbers "whitelist.sqf";
-
-private _permissions = [true,false,false,false,false,true];
+waitUntil {!isNil "GRLIB_permissions"};
+waitUntil {!isNil "save_is_loaded"};
 
 while {true} do {
 
-	private _temp_permissions = [];
+	private _default_permissions = [];
+	{if ((_x select 0) == "Default") exitWith {_default_permissions = (_x select 2);}} foreach GRLIB_permissions;
 
-	{
-		if ((str _x) in KPLIB_rightAll) then {
-			_permissions = [true,true,true,true,true,true];
-		} else {
-			_permissions = [
-				true,
-				if ((str _x) in KPLIB_rightHeavy) then {true} else {false},
-				if ((str _x) in KPLIB_rightAir) then {true} else {false},
-				if ((str _x) in KPLIB_rightConstruct) then {true} else {false},
-				if ((str _x) in KPLIB_rightRecycle) then {true} else {false},
-				true
-			];
+	if (count _default_permissions > 0) then {
+		private _all_players_uids = [];
+		{if ((_x select 0) != "Default") then {_all_players_uids pushback (_x select 0)}} foreach GRLIB_permissions;
+
+		private _old_count = count GRLIB_permissions;
+		{
+			if (!((name _x) in ["HC1", "HC2", "HC3"])) then {
+				if (!((getPlayerUID _x) in _all_players_uids)) then {
+					GRLIB_permissions pushback [(getPlayerUID _x), (name _x), _default_permissions];
+				};
+			};
+		} foreach allPlayers;
+
+		if (_old_count != count GRLIB_permissions) then {
+			publicVariable "GRLIB_permissions"
 		};
+	};
 
-		if (!((name _x) in ["HC1","HC2","HC3"])) then {
-			_temp_permissions pushBack [(getPlayerUID _x), _permissions];
-		};
-	} forEach allPlayers;
+	sleep 10;
 
-	GRLIB_permissions = +_temp_permissions;
-	
-	publicVariable "GRLIB_permissions";
-
-	sleep 30;
 };

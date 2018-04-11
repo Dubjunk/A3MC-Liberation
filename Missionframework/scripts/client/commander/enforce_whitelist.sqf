@@ -2,25 +2,45 @@
 
 if ( !GRLIB_use_whitelist ) exitWith {};
 
-waitUntil {alive player};
+private [ "_commanderobj", "_tagmatch", "_idmatch", "_namematch" ];
+
+waitUntil { alive player };
 sleep 1;
 
-if (((str player) == "commandant") && !((getPlayerUID player) in GRLIB_whitelisted_steamids)) then {
-	endMission "END1";
-};
+_commanderobj = [] call F_getCommander;
+if ( !isNull _commanderobj ) then {
+	if ( player == _commanderobj && !([] call F_isAdmin)) then {
 
-if (((str player) == "secondcommandant") && !((getPlayerUID player) in KPLIB_pltsgt_whitelist)) then {
-	endMission "END1";
-};
+		_tagmatch = false;
+		_idmatch = false;
+		_namematch = false;
 
-if (((str player) in KPLIB_rightAir) && !((getPlayerUID player) in KPLIB_pilot_whitelist)) then {
-	endMission "END1";
-};
+		if ( !isNil "GRLIB_whitelisted_tags" ) then {
+			if ( count (squadParams _commanderobj) != 0 ) then {
+				if ( ((squadParams _commanderobj select 0) select 0) in GRLIB_whitelisted_tags  ) then {
+					_tagmatch = true;
+				};
+			};
+		};
 
-if (((str player) in KPLIB_rightConstruct) && !((getPlayerUID player) in KPLIB_pio_whitelist)) then {
-	endMission "END1";
-};
+		if ( !isNil "GRLIB_whitelisted_steamids" ) then {
+			if ( ( getPlayerUID _commanderobj ) in GRLIB_whitelisted_steamids ) then {
+				_idmatch = true;
+			};
+		};
 
-if (((str player) in KPLIB_rightZeus) && !((getPlayerUID player) in KPLIB_zeus_whitelist)) then {
-	endMission "END1";
+		if ( !isNil "GRLIB_whitelisted_names" ) then {
+			if ( ( name _commanderobj ) in GRLIB_whitelisted_names ) then {
+				_namematch = true;
+			};
+		};
+
+		if ( !( _tagmatch || _idmatch || _namematch ) ) then {
+
+			sleep 1;
+			if ( alive _commanderobj ) then {
+				endMission "END1";
+			};
+		};
+	};
 };

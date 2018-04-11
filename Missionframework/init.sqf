@@ -17,7 +17,7 @@ if (isServer) then {
 };
 
 if (!isDedicated && !hasInterface && isMultiplayer) then {
-	[] spawn compileFinal preprocessFileLineNumbers "scripts\server\offloading\hc_manager.sqf";
+	execVM "scripts\server\offloading\hc_manager.sqf";
 };
 
 if (!isDedicated && hasInterface) then {
@@ -50,3 +50,7 @@ adv_aceCPR_probabilities = [ 20, 10, 5, 50];
 //----------------- Vcom AI ----------------//
 
 If (isServer || !(hasinterface) ) then {[] execVM "VCOMAI\init.sqf";}
+// Execute fnc_reviveInit again (by default it executes in postInit)
+if ((KP_liberation_bis_revive_mode == 1) && !KP_liberation_ace_med) then {
+	[] call bis_fnc_reviveInit;
+};
