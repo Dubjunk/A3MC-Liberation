@@ -1,10 +1,9 @@
 <p align="center">
-    <img src="https://www.killahpotatoes.de/images/kp256.png" width="100">
+    <img src="https://www.killahpotatoes.de/images/kp512.png" width="100">
 </p>
-
 <p align="center">
     <a href="https://github.com/Dubjunk/A3MC-Liberation/blob/master/LICENSE">
-        <img src="https://img.shields.io/badge/License-GPL%20v3-blue.svg?style=flat-square" alt="License: GPL v3">
+        <img src="https://img.shields.io/github/license/Dubjunk/A3MC-Liberation.svg?style=flat-square" alt="License: MIT">
     </a>
     <a href="https://github.com/Dubjunk/A3MC-Liberation/issues">
         <img src="https://img.shields.io/github/issues-raw/Dubjunk/A3MC-Liberation.svg?style=flat-square" alt="GitHub issues">
