@@ -13,7 +13,7 @@
 
 <hr>
 
-# A3MC Liberation
+# Liberation
 
 ## Version 0.1
 
