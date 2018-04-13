@@ -189,10 +189,10 @@ force force ace_mk6mortar_allowComputerRangefinder = true;
 force force ace_mk6mortar_useAmmoHandling = true;
 
 // ACE Nightvision
-force force ace_nightvision_aimDownSightsBlur = 0.2;
+force force ace_nightvision_aimDownSightsBlur = 0.195;
 force force ace_nightvision_disableNVGsWithSights = false;
-force force ace_nightvision_effectScaling = 0.6;
-force force ace_nightvision_fogScaling = 0.6;
+force force ace_nightvision_effectScaling = 0.5;
+force force ace_nightvision_fogScaling = 0.5;
 
 // ACE Pylons
 force force ace_pylons_enabled = true;
@@ -273,11 +273,11 @@ force force ace_viewdistance_viewDistanceLandVehicle = 0;
 force force ace_viewdistance_viewDistanceOnFoot = 0;
 
 // ACE Splittersimulation
-force force ace_frag_enabled = true;
+force force ace_frag_enabled = false;
 force force ace_frag_maxTrack = 10;
 force force ace_frag_maxTrackPerFrame = 10;
 force force ace_frag_reflectionsEnabled = true;
-force force ace_frag_spallEnabled = true;
+force force ace_frag_spallEnabled = false;
 
 // ACE Sprengstoffe
 force force ace_explosives_explodeOnDefuse = false;
@@ -443,8 +443,8 @@ acre_sys_core_premixGlobalVolume = 1;
 force force acre_sys_core_revealToAI = true;
 force force acre_sys_core_spectatorVolume = 1;
 force force acre_sys_core_terrainLoss = 0.43672;
-force force acre_sys_core_ts3ChannelName = "Einsatz Public #1";
-force force acre_sys_core_ts3ChannelPassword = "1337";
+force force acre_sys_core_ts3ChannelName = "ACRE";
+force force acre_sys_core_ts3ChannelPassword = "KPACRE";
 force force acre_sys_core_ts3ChannelSwitch = true;
 force force acre_sys_core_unmuteClients = true;
 
