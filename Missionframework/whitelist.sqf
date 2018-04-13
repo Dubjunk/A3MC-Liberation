@@ -78,7 +78,7 @@ KPLIB_zeus_whitelist = [
 	"76561198015544410" // FleXter 19.03.2018
 ];*/
 
-KPLIB_pio_whitelist = [
+/*KPLIB_pio_whitelist = [
 	//-------------  KP  -----------------//
 	"76561197997813072", // Bunnyhopps
 	"76561198168674243", // CaRLiTo
@@ -100,7 +100,7 @@ KPLIB_pio_whitelist = [
 	"76561198075354207", // Tobson 02.04.2018
 	"76561197970207929" // OHeady 25.02.2018
 	
-];
+];*/
 
 KPLIB_rightAll = [
 	"commandant",

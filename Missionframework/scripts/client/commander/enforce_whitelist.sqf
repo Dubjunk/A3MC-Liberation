@@ -17,7 +17,7 @@ if (((str player) in KPLIB_rightAir) && !([player, 2] call F_fetchPermission)) t
 	endMission "END1";
 };
 
-if (((str player) in KPLIB_rightConstruct) && !((getPlayerUID player) in KPLIB_pio_whitelist)) then {
+if (((str player) in KPLIB_rightConstruct) && !([player, 3] call F_fetchPermission)) then {
 	endMission "END1";
 };
 

@@ -11,7 +11,7 @@ Optional Mods:
 Each of these should be unique, the same classnames for different purposes may cause various unpredictable issues with player actions. Or not, just don't try!	*/
 FOB_typename = "Land_Cargo_HQ_V1_F";									// This is the main FOB HQ building. 																									Default is "Land_Cargo_HQ_V1_F".
 FOB_box_typename = "B_Slingload_01_Cargo_F";							// This is the FOB as a container. 																										Default is "B_Slingload_01_Cargo_F".
-FOB_truck_typename = "rhsusf_M1078A1P2_B_D_CP_fmtv_usarmy";						// This is the FOB as a vehicle.																										Default is "B_Truck_01_box_F".
+FOB_truck_typename = "rhsusf_M1078A1P2_B_D_CP_fmtv_usarmy";				// This is the FOB as a vehicle.																										Default is "B_Truck_01_box_F".
 Arsenal_typename = "B_supplyCrate_F";									// This is the virtual arsenal as portable supply crates.  																				Default is "B_supplyCrate_F".
 Respawn_truck_typename = "rhsusf_M1085A1P2_B_D_Medical_fmtv_usarmy";	// This is the mobile respawn (and medical) truck. 																						Default is "B_Truck_01_medical_F".
 huron_typename = "RHS_CH_47F";											// This is Spartan 01, a multipurpose mobile respawn as a helicopter. 																	Default is "B_Heli_Transport_03_unarmed_F".
@@ -237,7 +237,6 @@ buildings = [
 	["Land_Cargo_House_V1_F",0,0,0],
 	["Land_Cargo_Patrol_V1_F",0,0,0],
 	["Land_Cargo_Tower_V1_F",0,0,0],
-	["Land_Billboard_F",0,0,0],
 	["Flag_NATO_F",0,0,0],
 	["Flag_US_F",0,0,0],
 	["rhs_Flag_Russia_F",0,0,0],
@@ -314,7 +313,16 @@ buildings = [
 	["Land_ClutterCutter_large_F",0,0,0],
 	["Land_ConcreteKerb_01_2m_F",0,0,0],
 	["Land_ConcreteKerb_01_4m_F",0,0,0],
-	["Land_ConcreteKerb_01_8m_F",0,0,0]
+	["Land_ConcreteKerb_01_8m_F",0,0,0],
+	["Land_ConcreteHedgehog_01_F",0,0,0],
+	["Land_ConcreteHedgehog_01_palette_F",0,0,0],
+	["Land_Dragons_Teeth_01_4x2_new_F",0,0,0],
+	["Land_Dragons_Teeth_01_1x1_new_F",0,0,0],
+	["Land_RepairDepot_01_tan_F",0,0,0],
+	["Land_TankTracks_01_short_F",0,0,0],
+	["Land_TankTracks_01_long_F",0,0,0],
+	["Land_TankEngine_01_F",0,0,0],
+	["Land_CzechHedgehog_01_new_F",0,0,0]
 ];
 
 support_vehicles = [
@@ -468,7 +476,7 @@ elite_vehicles = [
 	"BWA3_Tiger_RMK_Universal",											//UH Tiger RMK (Universal)
 	//US Army
 	"rhsusf_mkvsoc",													//Mk.V SOCOM
-	"RHS_M2A3_BUSKIII",												//M2A3 (Busk III)
+	"RHS_M2A3_BUSKIII",													//M2A3 (Busk III)
 	"RHS_M6",															//M6A2
 	"rhsusf_m109d_usarmy",												//M109A6	
 	"rhsusf_m1a2sep1tuskiid_usarmy",									//M1A2SEPv1 (Tusk II)
@@ -478,7 +486,6 @@ elite_vehicles = [
 	"RHS_A10",															//A-10A (CAS)	
 	"RHS_C130J",														//C130J
 	//Russian Federation
-	"RHS_Ural_Zu23_VDV_01",												//Ural-4320 (ZU-23-2)
 	"RHS_BM21_VDV_01",													//BM-21
 	"rhs_bmd4ma_vdv",													//BMD-4M (A)
 	"rhs_zsu234_aa",													//ZSU-23-4
