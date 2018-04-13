@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://a3m-community.de/wp-content/uploads/2018/01/cropped-logoHeader-3.png" width="900">
+    <img src="https://www.killahpotatoes.de/wcf/images/styleLogo-78fcf5f87fc2244deb5b40951fe0371b529489a0.png" width="100">
 </p>
 
 <p align="center">
@@ -13,15 +13,13 @@
 
 <hr>
 
-# A3MC Liberation
+# Liberation
 
 ## Version 0.1
 
-[A3MC Homepage](https://a3m-community.de)
+[Homepage](https://www.killahpotatoes.de)
 
-[Steam Seite](http://steamcommunity.com/groups/A3M-Community)
-
-[Discord](https://discordapp.com/invite/mEfXAEd)
+[Discord](https://discord.gg/0remE88d4aRwCaNj)
 
 Hier findet ihr die Dateien zu unserer Liberation Version, angepasst auf die A3M-Community.
 
@@ -42,7 +40,7 @@ The area has fallen to the enemy, and it is up to you to take it back. Embark on
 
 ## Public Server
 
-### [GER] ArmA3 MilSim Community [A3MC] - Public Server #1
+### [GER] ArmA3 MilSim Community - Public Server #1
 
 * IP: 213.133.110.170
 * Port: 2322
@@ -72,7 +70,7 @@ The area has fallen to the enemy, and it is up to you to take it back. Embark on
     * [Enhanced Movement](http://steamcommunity.com/sharedfiles/filedetails/?id=333310405)
 
 ### Zurzeit nicht in Betrieb:
-### [GER] ArmA3 MilSim Community [A3MC] - Public Server #2
+### [GER] ArmA3 MilSim Community - Public Server #2
 
 * IP: 213.133.110.170
 * Port: 2342
