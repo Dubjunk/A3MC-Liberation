@@ -58,7 +58,7 @@ KPLIB_zeus_whitelist = [
 
 ];
 
-KPLIB_pilot_whitelist = [
+/*KPLIB_pilot_whitelist = [
 	//-------------  KP  -----------------//
 	"76561197997813072", // Bunnyhopps
 	"76561198168674243", // CaRLiTo
@@ -76,7 +76,7 @@ KPLIB_pilot_whitelist = [
 	"76561197970207929", // OHeady 21.02.2018
 	"76561198017253407", // Carmine 25.03.2018
 	"76561198015544410" // FleXter 19.03.2018
-];
+];*/
 
 KPLIB_pio_whitelist = [
 	//-------------  KP  -----------------//

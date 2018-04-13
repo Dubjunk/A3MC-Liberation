@@ -2616,7 +2616,7 @@
 		<Key ID="STR_PERMISSION_NO_AIR">
 			<Original>You don't have permission from the commander to use air vehicles.</Original>
 			<French>Vous n'avez pas la permission du commandant pour utiliser les véhicules aériens.</French>
-			<German>Du hast keine Rechte zur Nutzung von Luftfahrzeugen</German>
+			<German>Du hast keine Rechte zur Nutzung von Luftfahrzeugen oder besetzt den falschen Slot.</German>
 			<Spanish>No tienes permiso del comandante para usar vehículos aéreos</Spanish>
 			<Russian>У тебя нет разрешения от командира использовать авиацию.</Russian>
 			<Italian>Non hai il permesso di usare veivoli</Italian>
