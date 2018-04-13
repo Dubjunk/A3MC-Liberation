@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://www.killahpotatoes.de/wcf/images/styleLogo-78fcf5f87fc2244deb5b40951fe0371b529489a0.png" width="900">
+    <img src="https://www.killahpotatoes.de/wcf/images/styleLogo-78fcf5f87fc2244deb5b40951fe0371b529489a0.png" width="100">
 </p>
 
 <p align="center">
