@@ -333,6 +333,7 @@ while { true } do {
 					case KP_liberation_recycle_building: {_vehicle setVariable ["ace_isRepairFacility", 1, true];};
 					case "Flag_White_F": {_vehicle setFlagTexture "res\kpflag.jpg";};
 					case "Flag_UNO_F": {_vehicle setFlagTexture "res\a3mc_flag.jpg";};
+					case "Land_Billboard_F": {_vehicle setObjectTextureGlobal [0, "res\ts_billboard.paa"];};
 					case "I_MRAP_03_F": {_vehicle setObjectTextureGlobal [0,"res\kgb_fennek_des.jpg"];};
 					case "I_MRAP_03_hmg_F": {_vehicle setObjectTextureGlobal [0,"res\kgb_fennek_des.jpg"]; _vehicle setObjectTextureGlobal [1,"res\turret_des_new.jpg"];};
 					case "I_MRAP_03_gmg_F": {_vehicle setObjectTextureGlobal [0,"res\kgb_fennek_des.jpg"]; _vehicle setObjectTextureGlobal [1,"res\turret_des_new.jpg"];};					

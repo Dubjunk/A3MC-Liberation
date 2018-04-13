@@ -4065,6 +4065,16 @@
 			<Turkish>Killah Potatoes bayrağı</Turkish>
 			<Portuguese>Bandeira da Killah Potatoes</Portuguese>
 		</Key>
+		<Key ID="STR_INDIV_BILLBOARD_F_TS">
+			<Original>Radio Overview</Original>
+			<German>Funk Übersicht</German>
+			<Spanish>Radio Overview</Spanish>
+			<Russian>Radio Overview</Russian>
+			<Italian>Radio Overview</Italian>
+			<Chinesesimp>Radio Overview</Chinesesimp>
+			<Turkish>Radio Overview</Turkish>
+			<Portuguese>Radio Overview</Portuguese>
+ 		</Key>
 		<Key ID="STR_SMALL_STORAGE">
 			<Original>Small storage area</Original>
 			<German>Kleiner Lagerbereich</German>

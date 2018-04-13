@@ -268,7 +268,9 @@ if (!isNil "greuh_liberation_savegame") then {
 			if (_nextclass == "Flag_UNO_F") then {
 				_nextbuilding setFlagTexture "res\a3mc_flag.jpg";
 			};			
-
+			if (_nextclass == "Land_Billboard_F") then {
+				_nextbuilding setObjectTextureGlobal [0, "res\ts_billboard.paa"];
+			};
 			if (_nextclass == "I_MRAP_03_F") then {
 				_nextbuilding setObjectTextureGlobal [0,"res\kgb_fennek_des.jpg"];				
 			};

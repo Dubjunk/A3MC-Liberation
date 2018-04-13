@@ -157,6 +157,7 @@ buildings = [
 	["Land_Cargo_House_V1_F",0,0,0],
 	["Land_Cargo_Patrol_V1_F",0,0,0],
 	["Land_Cargo_Tower_V1_F",0,0,0],
+	["Land_Billboard_F",0,0,0],
 	["Flag_NATO_F",0,0,0],
 	["Flag_US_F",0,0,0],
 	["BWA3_Flag_Ger_F",0,0,0],
