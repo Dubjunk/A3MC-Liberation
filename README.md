@@ -14,13 +14,13 @@
 
 # Liberation
 
-## Version 0.1
+## Version 0.963a
 
 [Homepage](https://www.killahpotatoes.de)
 
 [Discord](https://discord.gg/0remE88d4aRwCaNj)
 
-Hier findet ihr die Dateien zu unserer Liberation Version, angepasst auf die A3M-Community.
+Hier findet ihr die Dateien zu unserer Liberation Version, angepasst auf die Community.
 
 Original Beschreibung:
 
@@ -39,7 +39,7 @@ The area has fallen to the enemy, and it is up to you to take it back. Embark on
 
 ## Public Server
 
-### [GER] ArmA3 MilSim Community - Public Server #1
+### [GER] ArmA3 MilSim - Public Server
 
 * IP: 213.133.110.170
 * Port: 2322

@@ -113,7 +113,7 @@ while {true} do {
 		};
 	};
 
-	if (_fobdistance < _distfob && alive player && vehicle player == player && (([ player, 3] call F_fetchPermission) || (player == ([] call F_getCommander) || [] call F_isAdmin))) then {
+	if (_fobdistance < _distfob && alive player && vehicle player == player && ((([ player, 3] call F_fetchPermission) && ((str player) in KPLIB_rightConstruct)) || (player == ([] call F_getCommander) || [] call F_isAdmin))) then {
 		if (_idact_build == -1) then {
 			_idact_build = player addAction ["<t color='#FFFF00'>" + localize "STR_BUILD_ACTION" + "</t> <img size='2' image='res\ui_build.paa'/>","scripts\client\build\open_build_menu.sqf","",-985,false,true,"","build_confirmed == 0"];
 		};
