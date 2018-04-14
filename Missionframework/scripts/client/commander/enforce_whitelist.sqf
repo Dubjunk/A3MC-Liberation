@@ -13,11 +13,13 @@ if (((str player) == "secondcommandant") && !((getPlayerUID player) in KPLIB_plt
 	endMission "END1";
 };
 
+// Wenn Spieler auf Pilotenslot und kein Recht hat zur Nutzung von Luftfahrzeugen (Liberation Rechte System), dann zurück zur Lobby
 if (((str player) in KPLIB_rightAir) && !([player, 2] call F_fetchPermission)) then {
 	endMission "END1";
 };
 
-if (((str player) in KPLIB_rightConstruct) && !([player, 3] call F_fetchPermission)) then {
+// Wenn Spieler auf Pionierslot und kein Recht hat zum bauen oder recyclen (Liberation Rechte System), dann zurück zur Lobby
+if (((str player) in KPLIB_rightConstruct) && (!([player, 3] call F_fetchPermission) || !([player, 4] call F_fetchPermission))) then {
 	endMission "END1";
 };
 

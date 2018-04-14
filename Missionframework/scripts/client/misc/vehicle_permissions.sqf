@@ -19,7 +19,7 @@ while {true} do {
 		};
 	} else {
 		if ((vehicle player) isKindOf "Air") then {
-			if (!([player, 2] call F_fetchPermission) || !((str player) in KPLIB_rightAir)) then {
+			if (!((str player) in KPLIB_rightAir)) then {
 				_doeject = true;
 				hint localize "STR_PERMISSION_NO_AIR";
 			};

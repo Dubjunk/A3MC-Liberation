@@ -113,7 +113,8 @@ while {true} do {
 		};
 	};
 
-	if (_fobdistance < _distfob && alive player && vehicle player == player && ((([ player, 3] call F_fetchPermission) && ((str player) in KPLIB_rightConstruct)) || (player == ([] call F_getCommander) || [] call F_isAdmin))) then {
+	// Bau von FOB Gebäuden und Fahrzeugen nur durch Spieler auf Pionierslot, Commander oder Admin
+	if (_fobdistance < _distfob && alive player && vehicle player == player && (((str player) in KPLIB_rightConstruct) || (player == ([] call F_getCommander)) || ([] call F_isAdmin))) then {
 		if (_idact_build == -1) then {
 			_idact_build = player addAction ["<t color='#FFFF00'>" + localize "STR_BUILD_ACTION" + "</t> <img size='2' image='res\ui_build.paa'/>","scripts\client\build\open_build_menu.sqf","",-985,false,true,"","build_confirmed == 0"];
 		};
@@ -157,8 +158,9 @@ while {true} do {
 		};
 	};
 
+	// Bau von Sektorlager und Produktionseinrichtungen nur durch Spieler auf Pionierslot, Commander oder Admin
 	if ((count _prod_sector) == 12) then {
-		if (alive player && vehicle player == player && ([player, 3] call F_fetchPermission) && ((count (_prod_sector select 3)) == 0)) then {
+		if (alive player && vehicle player == player && (((str player) in KPLIB_rightConstruct) || (player == ([] call F_getCommander)) || ([] call F_isAdmin)) && ((count (_prod_sector select 3)) == 0)) then {
 			if (_idact_sectorstorage == -1) then {
 				_idact_sectorstorage = player addAction ["<t color='#FFFF00'>" + localize "STR_SECSTORAGEBUILD_ACTION" + "</t>","scripts\client\build\do_sector_build.sqf",[KP_liberation_small_storage_building, _prod_sector],-993,false,true,"","build_confirmed == 0"];
 			};
@@ -168,7 +170,7 @@ while {true} do {
 				_idact_sectorstorage = -1;
 			};
 		};
-		if (alive player && vehicle player == player && ([player, 3] call F_fetchPermission) && ((count (_prod_sector select 3)) == 3) && !(_prod_sector select 4)) then {
+		if (alive player && vehicle player == player && (((str player) in KPLIB_rightConstruct) || (player == ([] call F_getCommander)) || ([] call F_isAdmin)) && ((count (_prod_sector select 3)) == 3) && !(_prod_sector select 4)) then {
 			if (_idact_supplyfacility == -1) then {
 				_idact_supplyfacility = player addAction ["<t color='#FFFF00'>" + localize "STR_SECSUPPLYBUILD_ACTION" + "</t>","scripts\client\build\do_sector_build.sqf",["supply", _prod_sector],-994,false,true,"","build_confirmed == 0"];
 			};
@@ -178,7 +180,7 @@ while {true} do {
 				_idact_supplyfacility = -1;
 			};
 		};
-		if (alive player && vehicle player == player && ([player, 3] call F_fetchPermission) && ((count (_prod_sector select 3)) == 3) && !(_prod_sector select 5)) then {
+		if (alive player && vehicle player == player && (((str player) in KPLIB_rightConstruct) || (player == ([] call F_getCommander)) || ([] call F_isAdmin)) && ((count (_prod_sector select 3)) == 3) && !(_prod_sector select 5)) then {
 			if (_idact_ammofacility == -1) then {
 				_idact_ammofacility = player addAction ["<t color='#FFFF00'>" + localize "STR_SECAMMOBUILD_ACTION" + "</t>","scripts\client\build\do_sector_build.sqf",["ammo", _prod_sector],-995,false,true,"","build_confirmed == 0"];
 			};
@@ -188,7 +190,7 @@ while {true} do {
 				_idact_ammofacility = -1;
 			};
 		};
-		if (alive player && vehicle player == player && ([player, 3] call F_fetchPermission) && ((count (_prod_sector select 3)) == 3) && !(_prod_sector select 6)) then {
+		if (alive player && vehicle player == player && (((str player) in KPLIB_rightConstruct) || (player == ([] call F_getCommander)) || ([] call F_isAdmin)) && ((count (_prod_sector select 3)) == 3) && !(_prod_sector select 6)) then {
 			if (_idact_fuelfacility == -1) then {
 				_idact_fuelfacility = player addAction ["<t color='#FFFF00'>" + localize "STR_SECFUELBUILD_ACTION" + "</t>","scripts\client\build\do_sector_build.sqf",["fuel", _prod_sector],-996,false,true,"","build_confirmed == 0"];
 			};
