@@ -6147,5 +6147,9 @@
 			<Turkish>== CANLANDIRMA AYARLARI ==</Turkish>
 			<Portuguese>== OPÇÕES DE RESSUCITAÇÃO ==</Portuguese>
 		</Key>
+		<Key ID="STR_SLOT_NOT_AUTHORIZED">
+			<Original>You are not authorized to use this slot on the server.</Original>
+			<German>Du bist auf diesem Server nicht für diesen Slot autorisiert.</German>
+		</Key>
 	</Package>
 </Project>

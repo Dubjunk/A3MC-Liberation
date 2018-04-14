@@ -27,4 +27,11 @@ class CfgDebriefing
 		description = $STR_COMMANDER_NOT_AUTHORIZED;
 		pictureBackground = "";
 	};
+	class End2
+	{
+		title =	$STR_SORRY;
+		subtitle = "";
+		description = $STR_SLOT_NOT_AUTHORIZED;
+		pictureBackground = "";
+	};
 };
