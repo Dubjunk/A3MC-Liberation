@@ -21,7 +21,7 @@ while {true} do {
 	waitUntil {sleep 1; count GRLIB_all_fobs > 0};
 	waitUntil {sleep 2; (player distance ([] call F_getNearestFob)) < GRLIB_fob_range};
 
-	if ([player, 4] call F_fetchPermission && (((str player) in KPLIB_rightConstruct) || (player == ([] call F_getCommander)) || ([] call F_isAdmin))) then {
+	if ((([player, 4] call F_fetchPermission) && ((str player) in KPLIB_rightConstruct)) || player == ([] call F_getCommander) || [] call F_isAdmin) then {
 		private _detected_vehicles = [
 			(getPos player) nearObjects veh_action_detect_distance, {
 				(((typeof _x in _recycleable_classnames ) && (({alive _x} count (crew _x)) == 0 || (unitIsUAV _x)) && ((locked _x == 0 || locked _x == 1))) ||
