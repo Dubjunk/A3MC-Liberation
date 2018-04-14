@@ -231,7 +231,7 @@ force force ace_medical_keepLocalSettingsSynced = true;
 force force ace_medical_level = 2;
 force force ace_medical_litterCleanUpDelay = 280;
 force force ace_medical_litterSimulationDetail = 1;
-force force ace_medical_maxReviveTime = 1800;
+force force ace_medical_maxReviveTime = 1200;
 force force ace_medical_medicSetting = 2;
 force force ace_medical_medicSetting_basicEpi = 1;
 force force ace_medical_medicSetting_PAK = 2;
@@ -448,6 +448,13 @@ force force acre_sys_core_ts3ChannelPassword = "KPACREP1";
 force force acre_sys_core_ts3ChannelSwitch = true;
 force force acre_sys_core_unmuteClients = true;
 
+// ADV - ACE CPR
+force force adv_aceCPR_addTime = 30;
+force force adv_aceCPR_chance_0 = 5;		//Chance for Non-Medic
+force force adv_aceCPR_chance_1 = 10;		//Chance for Medic
+force force adv_aceCPR_chance_2 = 20;		//Chance for Doctor
+force force adv_aceCPR_chance_aed = 50;		//Chance with AED
+force force adv_aceCPR_maxTime = 1200;
 
 // TFAR - Benutzereinstellungen
 TFAR_default_radioVolume = 7;
