@@ -37,14 +37,6 @@ if (((player call bis_fnc_reviveEnabled) || isDedicated) && !(KP_liberation_bis_
 
 If (isServer || !(hasinterface) ) then {[] execVM "VCOMAI\init.sqf";}
 
-
-//----------------- ADV ACE CPR ----------------//
-/* Konfiguration der Mod "ACE ADV CPR" */
-// Jeder kann wiederbeleben
-adv_aceCPR_onlyDoctors = 0;
-// Wiederbelebungschance [Doktor, Sanitäter, Standardsoldat, Defi]
-adv_aceCPR_probabilities = [ 20, 10, 5, 50];
-
 //----------------- injured ----------------//
 inCap = compile preprocessfilelinenumbers "scripts\inCap.sqf";
 
