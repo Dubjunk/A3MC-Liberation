@@ -27,6 +27,24 @@ if (!isDedicated && hasInterface) then {
 } else {
 	setViewDistance 1600;
 };
+
+// Execute fnc_reviveInit again (by default it executes in postInit)
+if (((player call bis_fnc_reviveEnabled) || isDedicated) && !(KP_liberation_bis_revive_mode == 0)) then {
+    [] call bis_fnc_reviveInit;
+};
+
+//----------------- Vcom AI ----------------//
+
+If (isServer || !(hasinterface) ) then {[] execVM "VCOMAI\init.sqf";}
+
+
+//----------------- ADV ACE CPR ----------------//
+/* Konfiguration der Mod "ACE ADV CPR" */
+// Jeder kann wiederbeleben
+adv_aceCPR_onlyDoctors = 0;
+// Wiederbelebungschance [Doktor, Sanitäter, Standardsoldat, Defi]
+adv_aceCPR_probabilities = [ 20, 10, 5, 50];
+
 //----------------- injured ----------------//
 inCap = compile preprocessfilelinenumbers "scripts\inCap.sqf";
 
@@ -38,19 +56,5 @@ _this select 3, unconscious and drag chance, determine chance unit unconscious i
 _this select 4, hit react chance, determine chance unit have react animation if got hit, min 0%-100% max (default = 20%)
 *** Important Note: if you increase hit react chance, it also decrease unconscious and drag chance ***
 */
+
 _null = [true, true, true, 90, 20] execvm "scripts\injured.sqf";
-
-//----------------- ADV ACE CPR ----------------//
-/* Konfiguration der Mod "ACE ADV CPR" */
-// Jeder kann wiederbeleben
-adv_aceCPR_onlyDoctors = 0;
-// Wiederbelebungschance [Doktor, Sanitäter, Standardsoldat, Defi]
-adv_aceCPR_probabilities = [ 20, 10, 5, 50];
-
-//----------------- Vcom AI ----------------//
-
-If (isServer || !(hasinterface) ) then {[] execVM "VCOMAI\init.sqf";}
-// Execute fnc_reviveInit again (by default it executes in postInit)
-if ((KP_liberation_bis_revive_mode == 1) && !KP_liberation_ace_med) then {
-	[] call bis_fnc_reviveInit;
-};
