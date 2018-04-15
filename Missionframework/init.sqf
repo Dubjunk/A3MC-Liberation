@@ -35,7 +35,7 @@ if (((player call bis_fnc_reviveEnabled) || isDedicated) && !(KP_liberation_bis_
 
 //----------------- Vcom AI ----------------//
 
-If (isServer || !(hasinterface) ) then {[] execVM "VCOMAI\init.sqf";}
+If (isServer || !(hasinterface) ) then {[] execVM "VCOMAI\init.sqf";};
 
 //----------------- injured ----------------//
 inCap = compile preprocessfilelinenumbers "scripts\inCap.sqf";
