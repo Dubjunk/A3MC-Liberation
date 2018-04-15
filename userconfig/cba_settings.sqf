@@ -448,13 +448,18 @@ force force acre_sys_core_ts3ChannelPassword = "KPACREP1";
 force force acre_sys_core_ts3ChannelSwitch = true;
 force force acre_sys_core_unmuteClients = true;
 
-// ADV - ACE CPR
+// ADV - ACE Medical
+// CPR
 force force adv_aceCPR_addTime = 30;
 force force adv_aceCPR_chance_0 = 5;		//Chance for Non-Medic
 force force adv_aceCPR_chance_1 = 10;		//Chance for Medic
 force force adv_aceCPR_chance_2 = 20;		//Chance for Doctor
 force force adv_aceCPR_chance_aed = 50;		//Chance with AED
 force force adv_aceCPR_maxTime = 1200;
+// Splint
+force force adv_aceSplint_reopenChance = 25;
+force force adv_aceSplint_reopenTime = 1200;
+force force adv_aceSplint_reuseChance = 75;
 
 // TFAR - Benutzereinstellungen
 TFAR_default_radioVolume = 7;
