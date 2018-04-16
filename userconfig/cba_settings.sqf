@@ -446,7 +446,7 @@ force force acre_sys_core_terrainLoss = 0.43672;
 force force acre_sys_core_ts3ChannelName = "ACRE - Public Server #1";
 force force acre_sys_core_ts3ChannelPassword = "KPACREP1";
 force force acre_sys_core_ts3ChannelSwitch = true;
-force force acre_sys_core_unmuteClients = true;
+acre_sys_core_unmuteClients = true;
 
 // ADV - ACE Medical
 // CPR
